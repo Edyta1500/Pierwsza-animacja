@@ -1,0 +1,56 @@
+@keyframes animation-move{
+    0%{
+        left:0;
+        top:0;
+
+    }
+
+    25%{
+        left: 300px;
+        top:0;
+
+    }
+
+    50%{
+        left:300px;
+        top:300px;
+    }
+
+    75%{
+        left: 0;
+        top:300px;
+    }
+
+    100%{
+        left:0;
+        top:0;
+    }
+
+    
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-container{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(245, 235, 236);
+    
+}
+
+.div-move{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: animation-move 10s linear  infinite;
+    
+}
