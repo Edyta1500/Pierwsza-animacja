@@ -1,35 +1,22 @@
-@keyframes animation-move{
-    0%{
-        left:0;
-        top:0;
 
+
+@keyframes square-move {
+    0%, 100% {
+        transform: translate(0, 0);
     }
-
     25%{
-        left: 300px;
-        top:0;
-
+        transform: translate(300px);
     }
-
     50%{
-        left:300px;
-        top:300px;
+        transform: translate(300px, 300px)
     }
-
     75%{
-        left: 0;
-        top:300px;
+        transform:  translate(0px, 300px);
     }
 
-    100%{
-        left:0;
-        top:0;
-    }
-
-    
 }
 
-body{
+body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -37,20 +24,20 @@ body{
     justify-content: center;
 }
 
-.div-container{
+.div-container {
     position: absolute;
     display: flex;
     width: 400px;
     height: 400px;
-    background-color: rgb(245, 235, 236);
-    
+    background-color: rgba(238, 230, 230, 0.642);
 }
 
-.div-move{
-    position:absolute;
+.div-move {
+    position: absolute;
     width: 100px;
     height: 100px;
     background-color: red;
-    animation: animation-move 10s linear  infinite;
-    
+    animation: square-move 10s linear infinite;
+     
+
 }
